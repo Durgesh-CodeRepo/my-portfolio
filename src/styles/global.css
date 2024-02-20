@@ -1,0 +1,484 @@
+:root {
+  --text: #0d0029;
+  --card-bg: #ffffff;
+}
+
+/* Header Component CSS========================================*/
+.header {
+  height: 7.5vh;
+  width: 98%;
+  border-radius: 1rem;
+  margin: auto;
+  background: var(--card-bg);
+  margin-top: 1rem;
+  box-shadow: 0 0 20px 0 rgba(119, 119, 119, 0.692);
+}
+
+.header .nav-content .brand img {
+  height: 3rem;
+  width: 8rem;
+}
+
+.header .nav-content .link {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text);
+  transition: all .5s ease-in-out;
+}
+
+.header .nav-content .link:hover {
+  color: #1138fb;
+}
+
+/* Home Component CSS===================================*/
+
+.home-component {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.home-component .home-content {
+  height: 32vh;
+  width: 95%;
+  background-image: url('../assets/images/home-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+
+.home-component h2 {
+  font-weight: bold;
+  font-size: 3.5vw;
+  color: var(--text);
+  margin: 6rem 2rem;
+}
+
+.greet_Section {
+  color: var(--text);
+  font-size: 1.4rem;
+  margin: 2rem 2rem 2rem 2.5rem;
+}
+
+.home-btn button {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background: linear-gradient(to left, #6A82FB, #fdf6b3);
+  transition: background 2s ease;
+}
+
+.home-btn button:hover {
+  background: linear-gradient(to right, #6A82FB, #fdf6b3);
+}
+
+/* Experience CSS=====================================================*/
+
+.experience-section {
+  margin: auto;
+  /* background: white; */
+  margin-top: 5rem;
+  border-radius: 1rem;
+}
+
+.experience-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.experience-h {
+  font-weight: bold;
+  color: var(--text);
+  padding: 1rem 0 0 4rem;
+}
+
+.experience-card-section {
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 2s ease-in-out;
+  background: linear-gradient(to left, #6A82FB, #fffacb);
+}
+
+.experience-card-section:hover {
+  background: linear-gradient(to left, #fdf6b3, #6A82FB);
+}
+
+.experience-card-section:hover .experience-card-img {
+  border: 6px solid #ffffff;
+}
+
+.experience-card-section:hover .ex-card-h {
+  color: #ffffff !important;
+}
+
+.experience-section .experience-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.experience-card-content .experience-card-img {
+  height: 5rem;
+  border: 6px solid #0d0029;
+  border-radius: 50%;
+  transition: all 2s ease;
+}
+
+/* Skill CSS===================================================== */
+
+.skill-section {
+  margin: 2rem 0;
+}
+
+.skill-row {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.skills-buttons {
+  margin: 3rem 0;
+}
+
+.skills-buttons button {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill-item {
+  margin: 0 1rem 2rem 0;
+  padding: .2rem 1rem;
+  background-color: var(--text);
+  color: var(--card-bg);
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 calc(33.33% - 20px);
+  /* Adjust as needed */
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+}
+
+.skill-item:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #0d0029e0;
+}
+
+.skill-item-img {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 0 .4rem 0 0;
+  /* border-radius: 1rem; */
+}
+
+.skill-h {
+  font-weight: bold;
+  color: var(--text);
+  padding: 1rem 0 0 4rem;
+}
+
+/* CSS transitions */
+.item-enter {
+  opacity: 0;
+}
+
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.item-exit {
+  opacity: 1;
+}
+
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-out;
+}
+
+/* Projects CSS=========================================== */
+
+
+.project-section{
+  margin: 5rem 0;
+  /* background: var(--text); */
+  background: #f5f7ff;
+  border-radius: 1rem;
+}
+
+.project-header{
+  align-items: center;
+}
+
+.project-header .project-buttons{
+  margin-right: 4rem;
+  align-items: center;
+}
+
+.project-header .project-buttons .btn{
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.project-section h2{
+  font-weight: bold;
+  color: var(--text);
+  padding: 1rem 0 0 4rem;
+}
+
+.project-row{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex: 0 0 calc(33.33% - 20px); 
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+  padding: 5rem;
+}
+
+.project-card{
+  min-height: 11.5rem;
+  max-width: 20rem;
+  margin: 1.5rem;
+  transition: all 1s ease-in-out;
+  color: var(--card-bg) !important;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  background: var(--text) !important;
+  border-radius: 1.5rem !important;
+  box-shadow: 0 0 10px 0 rgba(6, 6, 6, 0.692);
+}
+
+.project-card:hover{
+  transform: translateY(-15px);
+}
+
+.project-card-img{
+  height: 11rem;
+  width: 20rem;
+  padding: .5rem;
+  border-top-left-radius: 1.5rem !important;
+  border-top-right-radius: 1.5rem !important;
+}
+
+.project-card-body {
+  /* min-height: 11.5rem;
+  width: 20rem; */
+  position: absolute;
+  display: none;
+  overflow-x: hidden; 
+  background: #0d0029b1 !important;
+  transition: all 1s ease-in-out; 
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.692);
+}
+
+.project-card-body .project-card-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.project-card-text .project-card-buttons{
+   margin: 1.5rem 0;
+   display: flex;
+   justify-content: space-around;
+}
+
+.project-card-buttons button{
+   margin: 0 .5rem;
+   font-weight: bold;
+   padding: .4rem 1.5rem;
+}
+
+.project-card-title{
+  text-align: center;
+  padding: .5rem 0;
+}
+
+.project-card:hover .project-card-body {
+  display: block;
+}
+   
+
+/* About me CSS===========================================*/
+
+.about-me-container {
+  margin: 6rem auto;
+  color: var(--text);
+  /* background: var(--card-bg); */
+  /* border-radius: 1.5rem; */
+}
+
+.about-me-h {
+  color: var(--text);
+  font-weight: bold;
+  padding: 1.5rem 0;
+}
+
+.about-me-row {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem !important;
+  /* background: var(--card-bg);
+  border-radius: 1.5rem; */
+}
+
+/* Left Column */
+
+.about-me-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-image {
+  width: 22rem;
+  height: 23rem;
+  cursor: pointer;
+  /* border-top-right-radius: 5rem;
+  border-top-left-radius: 5rem; */
+  border-radius: 5rem;
+  transition: all .5s ease-in-out;
+}
+
+.user-image:hover{
+  transform: scale(1.1);
+}
+
+.user-name {
+  color: var(--text);
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.user-email {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.user-email img{
+  height: 2rem;
+  width: 2rem;
+}
+
+/* Right Column */
+
+.about-me-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--card-bg);
+  border-radius: 1.5rem;
+  /* margin-top: 5rem !important; */
+  padding: 2rem 0;
+  box-shadow: 0 0 20px 0 rgba(119, 119, 119, 0.692);
+}
+
+.description {
+  padding: 0 2rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-links .link {
+  padding: 0 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  /* background: #0d0029; 
+  border-radius: 50%; */
+}
+
+.social-links img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  z-index: 1 !important;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 0 20px 0 rgba(119, 119, 119, 0.692);
+}
+
+.social-links img:hover{
+  transform: scale(1.2);
+}
+
+
+/* Contact CSS============================================== */
+
+.contact-container{
+  margin: 5rem auto;
+}
+
+.contact-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 1.5rem; */
+}
+
+.contact-header h2{
+  color: var(--text);
+  font-weight: bold;
+}
+
+.contact-row{
+  margin-top: 5rem !important;
+  display: flex;
+  align-items: center;
+}
+
+.contact-card{
+  padding: 2rem;
+  box-shadow: 0 0 20px 0 rgba(119, 119, 119, 0.692);
+}
+
+/* Footer CSS============================================*/
+.footer {
+  padding: 2rem 0;
+  position: relative;
+  backdrop-filter: blur(10px); 
+  margin-top: 5rem;
+  background: var(--card-bg);
+}
+
+
+
+/* .curve-top {
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+} */
+
